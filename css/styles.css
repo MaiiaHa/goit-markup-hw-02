@@ -15,23 +15,86 @@
 «С16» Кнопкам задана властивість cursor зі значенням pointer.
 «С17» У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400. */
 
-/* основні кольори
+/* Всі наявні кольори: 
 #212121
+#FFFFFF
 #757575
+#2196F3
 #EEEEEE
-#000000
-#FFFFFF 60 %
-#ECECEC 
-      */
+#000000 - done
+#F5F4FA
+#FFFFFF60 %
+#2F303A
+#ECECEC */
+
+/* GENERAL STYLES */
 
 :root {
-  --backgrond-color: #ffffff;
+  --main-backgrond-color: #ffffff;
   --accent-color: #2196f3;
-  --footer-font: #2f303a; /* цвет первой секции постер и футера  */
+  --footer-font: #2f303a; /* колір першої секції постера і футера  */
   --section-color: #f5f4fa; /*  цвет секции наша команда */
+  --main-font-color: #212121; /* основний колір тексту */
+  --logo-font: 'Raleway', sans-serif;
+  --main-font: 'Roboto', sans-serif;
 }
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--backgrond-color);
+  background-color: var(--main-backgrond-color);
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+}
+
+.logo {
+  font-family: var(--logo-font);
+  color: #000000;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo-first-part {
+  color: var(--accent-color);
+}
+.link {
+  text-decoration: none; /* прибирає підкреслення посилань */
+}
+.list {
+  list-style: none; /* прибирає крапочки списку */
+}
+/* HEADER NAV */
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+/* MAIN SECTION (FIRST SECTION */
+
+.main-section {
+  background-color: #2f303a;
+}
+.main-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
