@@ -54,9 +54,6 @@ body {
 .list {
   list-style: none; /* прибирає крапочки списку */
 }
-/* прише браузер: clip
-(устарело)
-    h1.our-works.visually-hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -132,8 +129,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
-/* SERVICES (OUR WORKS) */
 
+/* SERVICES (OUR WORKS) */
 .servises-title,
 .team-title {
   font-weight: 700;
@@ -143,6 +140,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
 }
+
 /* TEAM SECTION */
 .team {
   background: var(--section-color);
@@ -169,6 +167,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
+
 /* FOOTER */
 .footer {
   background: var(--footer-font);
@@ -189,7 +188,6 @@ body {
 
 /* PORTFOLIO */
 /*  OUR WORKS */
-
 .our-works {
 }
 .works-btn {
