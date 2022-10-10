@@ -77,6 +77,12 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+.header-nav-link {
+  color: var(--main-font-color);
+}
+.header-nav-link.current {
+  color: var(--accent-color);
+}
 .header-link {
   color: var(--secondary-font-color);
 }
@@ -94,6 +100,7 @@ body {
   color: var(--main-background-color);
 }
 .main-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -186,6 +193,7 @@ body {
 .our-works {
 }
 .works-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
@@ -196,7 +204,9 @@ body {
   color: var(--main-font-color);
 }
 /* Тут через id будемо робити? */
-.works-btn:active {
+.works-btn:active,
+.works-btn:hover,
+.works-btn:focus {
   background: var(--accent-color);
   color: var(--main-background-color);
 }
