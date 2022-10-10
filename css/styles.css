@@ -74,6 +74,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+
+/* Колір навігації темно-сірий */
 .header-nav-link {
   color: var(--main-font-color);
 }
@@ -97,6 +99,7 @@ body {
   color: var(--main-background-color);
 }
 .main-btn {
+  /* inherit добавила*/
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -191,6 +194,7 @@ body {
 .our-works {
 }
 .works-btn {
+  /* добавила inherit */
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -201,7 +205,7 @@ body {
   background: var(--section-color);
   color: var(--main-font-color);
 }
-/* Тут через id будемо робити? */
+/* hover + focus кнопкам */
 .works-btn:active,
 .works-btn:hover,
 .works-btn:focus {
